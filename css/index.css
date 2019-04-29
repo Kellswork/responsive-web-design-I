@@ -150,12 +150,14 @@ h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
 }
+
 header {
     border-bottom: 2px solid black;
 }
+
 /*css for nav bar */
 nav {
     display: flex;
@@ -225,6 +227,7 @@ button {
     width: 150px;
     border: 1px solid black;
     font-size: 16px;
+    background: white;
 }
 
 /* style for section */
@@ -236,7 +239,7 @@ button {
 
 .box-one {
     padding-top: 30px;
-    width: 49%;
+    width: 48%;
 }
 
 .middle-img {
@@ -251,9 +254,11 @@ button {
     padding-top: 33px;
     padding-bottom: 30px;
 }
+
 .middle-content {
     border-bottom: 2px solid black;
 }
+
 /* style for address */
 .address {
     margin: 0 auto;
@@ -280,4 +285,30 @@ footer {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+}
+
+@media(max-width: 800px) {
+    .container {
+        width: 96%;
+        margin: 0 auto;
+    }
+
+    nav {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menu {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .intro-img {
+        display: none;
+    }
+
+    .intro {
+        width: 100%;
+    }
 }
